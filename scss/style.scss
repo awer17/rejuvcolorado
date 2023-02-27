@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}  
 body{
     font-family: "Montserrat";
 }
@@ -207,6 +210,51 @@ div.wrapper{
                     position: absolute;
                     top: 20px;
                     left: 20px;
+                }
+            }
+        }
+    }
+    footer{
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .wrap_contacts{
+                width: 50%;
+                background: #763786;
+                h2{
+                    margin-top: 33px;
+                    padding-left: 39px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 60px;
+                    line-height: 73px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 538px;
+                    margin-right: auto;
+                    margin-left: 63px;
+                    a{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255, 0.6);
+                        display: block;
+                        margin-bottom: 12px;
+                        transition: 0.8s;
+                        &:hover{
+                            color: #FFFFFF;
+                        }
+                    }
                 }
             }
         }
