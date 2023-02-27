@@ -1,5 +1,48 @@
-.wrapper {
-  width: 1600px;
+div.wrapper {
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+div.wrapper .center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.wrapper header {
+  background: #763786;
+}
+
+div.wrapper header .header_wrapper {
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.wrapper header .header_wrapper .wrap_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.wrapper header .header_wrapper .wrap_nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
