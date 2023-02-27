@@ -107,6 +107,7 @@ div.wrapper header .header_wrapper .wrap .date {
 div.wrapper .first_content {
   position: relative;
   background: url(/imges/bg_main.jpg);
+  background-position: center center;
 }
 
 div.wrapper .first_content .bg_ping {
@@ -159,8 +160,7 @@ div.wrapper .first_content .wrap .right_item {
 }
 
 div.wrapper .first_content .wrap .right_item .adres {
-  margin-top: 381px;
-  margin-left: 365px;
+  margin: 381px 0 0 auto;
   border: solid 2px #FFFFFF;
   padding: 25px;
   width: 227px;
@@ -188,5 +188,91 @@ div.wrapper .first_content .wrap .right_item .adres a {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 2px;
+}
+
+div.wrapper .info {
+  margin-bottom: 110px;
+}
+
+div.wrapper .info h3 {
+  margin-top: 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
+}
+
+div.wrapper .info div.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 62px;
+}
+
+div.wrapper .info div.wrap .content_left h2 {
+  margin-left: 57px;
+  margin-bottom: 54px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  color: #000000;
+  text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
+}
+
+div.wrapper .info div.wrap .content_left p {
+  width: 622px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+div.wrapper .info div.wrap .img_right {
+  margin-top: 74px;
+  position: relative;
+}
+
+div.wrapper .info div.wrap .img_right .bg_ping_logo {
+  background: #763786;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+div.wrapper .info div.wrap .img_right .bg_ping_logo img {
+  display: inline;
+  margin: 138px 43px;
+}
+
+div.wrapper .info div.wrap .img_right .bg_ping {
+  width: 395px;
+  height: 388px;
+  background: rgba(228, 64, 228, 0.31);
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

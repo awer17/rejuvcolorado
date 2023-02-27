@@ -69,6 +69,7 @@ div.wrapper{
     .first_content{
         position: relative;
         background: url(/imges/bg_main.jpg);
+        background-position: center center;
         .bg_ping{
             position: absolute;
             width: 50%;
@@ -110,8 +111,7 @@ div.wrapper{
             .right_item{
                 width: 50%;
                 .adres{
-                    margin-top: 381px;
-                    margin-left: 365px;
+                    margin: 381px 0 0 auto;
                     border: solid 2px #FFFFFF;
                     padding: 25px;
                     width: 227px;
@@ -137,6 +137,76 @@ div.wrapper{
                         color: #FFFFFF;
                         margin-top: 2px;
                     }
+                }
+            }
+        }
+    }
+    .info{
+        margin-bottom: 110px;
+        h3{
+            margin-top: 48px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000000;
+            text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
+        }
+        div.wrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 62px;
+            .content_left{
+                h2{
+                    margin-left: 57px;
+                    margin-bottom: 54px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 50px;
+                    line-height: 61px;
+                    display: flex;
+                    align-items: center;
+                    text-transform: capitalize;
+                    color: #000000;
+                    text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
+                }
+                p{
+                    width: 622px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: justify;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+            .img_right{
+                margin-top: 74px;
+                position: relative;
+                .bg_ping_logo{
+                    background: #763786;
+                    border-radius: 5px;
+                    position:relative;
+                    z-index: 1;
+                    img{
+                        display: inline;
+                        margin: 138px 43px;
+                    }
+                }
+                .bg_ping{
+                    width: 395px;
+                    height: 388px;
+                    background: rgba(228, 64, 228, 0.31);
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
                 }
             }
         }
