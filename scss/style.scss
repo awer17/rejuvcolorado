@@ -1,3 +1,12 @@
+/*@mixin*/
+
+@mixin onlylange($w) {
+    @media only screen and (max-width: $w)
+    {
+        @content;       
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }  
@@ -13,7 +22,17 @@ div.wrapper{
     margin: 0 auto;
     .center{
         max-width: 1200px;
-        margin: 0 auto;   
+        margin: 0 auto;
+        @include onlylange(1300px){
+            max-width: 90%;
+        }
+        @include onlylange(1000px){
+            max-width: 95%;
+        }
+        @include onlylange(430px){
+            max-width: 87%;
+        }
+
     }
     header{
         background: #763786;
@@ -23,12 +42,19 @@ div.wrapper{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            @include onlylange(430px){
+                flex-direction: column;
+            }
+    
             .wrap_nav{
                 width: 200px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+                @include onlylange(430px){
+                width: 100%;
+                }
                 nav ul{
                     display: flex;
                     flex-wrap: wrap;
@@ -65,14 +91,21 @@ div.wrapper{
                     text-align: center;
                     text-transform: uppercase;
                     color: #FFFFFF;
+                    @include onlylange(430px){
+                    margin-top: 10px;
+                    }
                 }
             }
         }
     }
     .first_content{
+        max-width: 1600px;
         position: relative;
-        background: url(/imges/bg_main.jpg);
+        background: url(../imges/bg_main.jpg);
         background-position: center center;
+        @include onlylange(720px){
+            background-position: 70% center ;
+        }
         .bg_ping{
             position: absolute;
             width: 50%;
@@ -81,6 +114,9 @@ div.wrapper{
             top: 0;
             right: 0;
             z-index: 1;
+            @include onlylange(700px){
+                display: none;
+            }
         }
         .wrap{
             display: flex;
@@ -88,7 +124,21 @@ div.wrapper{
             padding-bottom: 146px;
             z-index: 2;
             position: relative;
+            @include onlylange(800px){
+                flex-direction: column;
+                padding-bottom: 100px;
+            }
             .left_item{
+                @include onlylange(800px){
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            @include onlylange(460px){
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            
+
                 h1{
                     font-family: 'Montserrat';
                     font-style: normal;
@@ -98,6 +148,15 @@ div.wrapper{
                     text-transform: capitalize;
                     color: #FFFAE6;
                     padding-top: 174px;
+                    @include onlylange(1100px){
+                        padding-top: 120px;
+                        font-size: 40px;
+                    }
+                    @include onlylange(800px){
+                        padding-top: 75px;
+                    }
+    
+
                 }
                 .item{
                     width: 368px;
@@ -109,15 +168,33 @@ div.wrapper{
                     text-align: justify;
                     color: #FFFFFF;
                     padding-top: 43px;
+                    @include onlylange(1100px){
+                        padding-top: 5px;
+                    }
+                    @include onlylange(430px){
+                    width: 100%;
+                    }
+                    
                 }
             }
             .right_item{
                 width: 50%;
+                @include onlylange(800px){
+                width: 100%;
+                }
                 .adres{
                     margin: 381px 0 0 auto;
                     border: solid 2px #FFFFFF;
                     padding: 25px;
                     width: 227px;
+                    @include onlylange(1100px){
+                    margin-top: 300px;
+                    }
+                    @include onlylange(800px){
+                        margin: 30px  30px 0px auto;
+                    }
+                    @include onlylange(460px){
+                        margin: 30px  auto 0px auto;}   
                     p{
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -146,6 +223,10 @@ div.wrapper{
     }
     .info{
         margin-bottom: 110px;
+        @include onlylange(720px){
+            margin-bottom: 50px;
+        }
+
         h3{
             margin-top: 48px;
             font-family: 'Montserrat';
@@ -157,12 +238,23 @@ div.wrapper{
             text-align: center;
             color: #000000;
             text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
+            @include onlylange(1000px){
+                font-size: 25px;
+            }
+            @include onlylange(420px){
+                font-size: 20px;
+            } 
         }
         div.wrap{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 62px;
+            @include onlylange(1100px){
+                justify-content: center;
+                margin-top: 0px;
+            }
+
             .content_left{
                 h2{
                     margin-left: 57px;
@@ -177,6 +269,16 @@ div.wrapper{
                     text-transform: capitalize;
                     color: #000000;
                     text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
+                    @include onlylange(1000px){
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        font-size: 35px;
+                        margin-left: 0px;
+                        justify-content: center;
+                    }
+                    @include onlylange(420px){
+                        font-size: 27px;
+                    } 
                 }
                 p{
                     width: 622px;
@@ -188,11 +290,23 @@ div.wrapper{
                     text-align: justify;
                     text-transform: uppercase;
                     color: #000000;
+                    @include onlylange(720px){
+                        width: 90%;
+                        margin: 0 auto;
+                        justify-content: center;
+                    }
+                    @include onlylange(420px){
+                        font-size: 14px;
+                    } 
                 }
             }
             .img_right{
                 margin-top: 74px;
                 position: relative;
+                @include onlylange(1100px){
+                    display: none;
+                }
+
                 .bg_ping_logo{
                     background: #763786;
                     border-radius: 5px;
@@ -201,6 +315,10 @@ div.wrapper{
                     img{
                         display: inline;
                         margin: 138px 43px;
+                        @include onlylange(1200px){
+                            width: 250px;
+                            margin: 122px 43px;
+                        }
                     }
                 }
                 .bg_ping{
@@ -210,6 +328,10 @@ div.wrapper{
                     position: absolute;
                     top: 20px;
                     left: 20px;
+                    @include onlylange(1200px){
+                        width: 336px;
+                        height: 336px;
+                    }
                 }
             }
         }
@@ -217,11 +339,36 @@ div.wrapper{
     footer{
         .wrap{
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
+            flex-direction: row;
+            @include onlylange(950px){
+                flex-direction: column;
+            }
+            a.img_map{
+                width: 50%;
+                @include onlylange(950px){
+                width: 100%;
+                height: 281px;
+            }
+    
+                .bg_map{
+                    background: url(../imges/map.jpg);
+                    width: 100%;
+                    height: 100%;
+                    @include onlylange(600px){
+                        background-position: 50% 50%;
+
+                    }
+                }
+                
+            }
             .wrap_contacts{
                 width: 50%;
                 background: #763786;
+                @include onlylange(950px){
+                    width: 100%;
+                }
+    
                 h2{
                     margin-top: 33px;
                     padding-left: 39px;
@@ -232,14 +379,37 @@ div.wrapper{
                     line-height: 73px;
                     text-transform: uppercase;
                     color: #FFFFFF;
+                    @include onlylange(1100px){
+                        font-size: 40px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    @include onlylange(1000px){
+                        font-size: 30px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+    
                 }
-                .wrapper{
+                .wrapper_footer{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    width: 538px;
+                    max-width: 538px;
                     margin-right: auto;
                     margin-left: 63px;
+                    padding-bottom: 20px;
+                    @include onlylange(1280px){
+                        width: 85%;
+                        margin-left: 35px;
+                    }
+                    @include onlylange(1000px){
+                        width: 89%;
+                    }
+                    @include onlylange(600px){
+                    flex-direction: column;
+                }
+
                     a{
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -254,6 +424,12 @@ div.wrapper{
                         &:hover{
                             color: #FFFFFF;
                         }
+                        @include onlylange(950px){
+                            margin-bottom: 1px;
+                        }
+                    }
+                    .network{
+                        margin-top: 15px;
                     }
                 }
             }
