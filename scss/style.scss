@@ -7,6 +7,54 @@
     }
 }
 
+$grey: #656363;
+$grey_black: #353535;
+$black: #1A1A18;
+$white: #fff;
+$pink: #D63FD8;
+$violet: #763786;
+
+@mixin textstyle-h1($c) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    text-transform: capitalize;
+    color: $c;
+}
+
+@mixin textstyle-h2($c) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 73px;
+    text-transform: capitalize;
+    color: $c;
+}
+
+@mixin textstyle-h3($c) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: $c;
+}
+
+@mixin textstyle-p($c) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: $c;
+}
+
 html {
     scroll-behavior: smooth;
 }  
@@ -15,6 +63,20 @@ body{
 }
 .menu_icon{
     display: none;
+}
+h1{
+    @include textstyle-h1($white)
+}
+
+h2{
+    @include textstyle-h1($grey)
+}
+
+h3{
+    @include textstyle-h3($grey_black)
+}
+p{
+    @include textstyle-p($grey)
 }
 
 div.wrapper{
@@ -32,7 +94,6 @@ div.wrapper{
         @include onlylange(430px){
             max-width: 87%;
         }
-
     }
     header{
         background: #763786;
@@ -93,244 +154,6 @@ div.wrapper{
                     color: #FFFFFF;
                     @include onlylange(430px){
                     margin-top: 10px;
-                    }
-                }
-            }
-        }
-    }
-    .first_content{
-        max-width: 1600px;
-        position: relative;
-        background: url(../imges/bg_main.jpg);
-        background-position: center center;
-        @include onlylange(720px){
-            background-position: 70% center ;
-        }
-        .bg_ping{
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            background: rgba(228, 64, 228, 0.31);
-            top: 0;
-            right: 0;
-            z-index: 1;
-            @include onlylange(700px){
-                display: none;
-            }
-        }
-        .wrap{
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 146px;
-            z-index: 2;
-            position: relative;
-            @include onlylange(800px){
-                flex-direction: column;
-                padding-bottom: 100px;
-            }
-            .left_item{
-                @include onlylange(800px){
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-            @include onlylange(460px){
-                padding-left: 0px;
-                padding-right: 0px;
-            }
-            
-
-                h1{
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 60px;
-                    line-height: 73px;
-                    text-transform: capitalize;
-                    color: #FFFAE6;
-                    padding-top: 174px;
-                    @include onlylange(1100px){
-                        padding-top: 120px;
-                        font-size: 40px;
-                    }
-                    @include onlylange(800px){
-                        padding-top: 75px;
-                    }
-    
-
-                }
-                .item{
-                    width: 368px;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 20px;
-                    text-align: justify;
-                    color: #FFFFFF;
-                    padding-top: 43px;
-                    @include onlylange(1100px){
-                        padding-top: 5px;
-                    }
-                    @include onlylange(430px){
-                    width: 100%;
-                    }
-                    
-                }
-            }
-            .right_item{
-                width: 50%;
-                @include onlylange(800px){
-                width: 100%;
-                }
-                .adres{
-                    margin: 381px 0 0 auto;
-                    border: solid 2px #FFFFFF;
-                    padding: 25px;
-                    width: 227px;
-                    @include onlylange(1100px){
-                    margin-top: 300px;
-                    }
-                    @include onlylange(800px){
-                        margin: 30px  30px 0px auto;
-                    }
-                    @include onlylange(460px){
-                        margin: 30px  auto 0px auto;}   
-                    p{
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 20px;
-                        text-transform: uppercase;
-                        color: #FFFFFF;
-                        margin: 0;
-                        margin-bottom: 5px;
-                    }
-                    a{
-                        display: block;
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 16px;
-                        line-height: 20px;
-                        text-transform: uppercase;
-                        color: #FFFFFF;
-                        margin-top: 2px;
-                    }
-                }
-            }
-        }
-    }
-    .info{
-        margin-bottom: 110px;
-        @include onlylange(720px){
-            margin-bottom: 50px;
-        }
-
-        h3{
-            margin-top: 48px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 32px;
-            line-height: 39px;
-            text-transform: uppercase;
-            text-align: center;
-            color: #000000;
-            text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
-            @include onlylange(1000px){
-                font-size: 25px;
-            }
-            @include onlylange(420px){
-                font-size: 20px;
-            } 
-        }
-        div.wrap{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 62px;
-            @include onlylange(1100px){
-                justify-content: center;
-                margin-top: 0px;
-            }
-
-            .content_left{
-                h2{
-                    margin-left: 57px;
-                    margin-bottom: 54px;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 50px;
-                    line-height: 61px;
-                    display: flex;
-                    align-items: center;
-                    text-transform: capitalize;
-                    color: #000000;
-                    text-shadow: 2px -2px 0px rgba(214, 63, 216, 0.37);
-                    @include onlylange(1000px){
-                        margin-top: 10px;
-                        margin-bottom: 15px;
-                        font-size: 35px;
-                        margin-left: 0px;
-                        justify-content: center;
-                    }
-                    @include onlylange(420px){
-                        font-size: 27px;
-                    } 
-                }
-                p{
-                    width: 622px;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 20px;
-                    text-align: justify;
-                    text-transform: uppercase;
-                    color: #000000;
-                    @include onlylange(720px){
-                        width: 90%;
-                        margin: 0 auto;
-                        justify-content: center;
-                    }
-                    @include onlylange(420px){
-                        font-size: 14px;
-                    } 
-                }
-            }
-            .img_right{
-                margin-top: 74px;
-                position: relative;
-                @include onlylange(1100px){
-                    display: none;
-                }
-
-                .bg_ping_logo{
-                    background: #763786;
-                    border-radius: 5px;
-                    position:relative;
-                    z-index: 1;
-                    img{
-                        display: inline;
-                        margin: 138px 43px;
-                        @include onlylange(1200px){
-                            width: 250px;
-                            margin: 122px 43px;
-                        }
-                    }
-                }
-                .bg_ping{
-                    width: 395px;
-                    height: 388px;
-                    background: rgba(228, 64, 228, 0.31);
-                    position: absolute;
-                    top: 20px;
-                    left: 20px;
-                    @include onlylange(1200px){
-                        width: 336px;
-                        height: 336px;
                     }
                 }
             }
