@@ -92,10 +92,25 @@ button{
     border-style: none; 
     border: 1px solid $grey_black;
     background: $white;
+    transition: .8s;
+    cursor: pointer;
 }
 button.btn_pink{
     background: $pink;
     color: $white;
+    border: none;
+    &:hover{
+        background: #E91CEC;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4)
+        
+    }
+}
+button.btn_white{
+    &:hover{
+        background: rgba(214, 63, 216, 0.7);
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4)
+    }
+
 }
 
 div.wrapper{
@@ -125,9 +140,7 @@ div.wrapper{
             @include onlylange(430px){
                 flex-direction: column;
             }
-    
             .wrap_nav{
-                width: 200px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -153,9 +166,14 @@ div.wrapper{
                             &:hover{
                                 border-bottom: solid 2px;
                             }
+                        }
                     }
-                    }
-                }    
+                }
+            }
+            button.appointment{
+                width: 179px;
+                height: 38px;
+                margin-left: 15px;
             }
             .wrap{
                 display: flex;
@@ -192,14 +210,12 @@ div.wrapper{
                 width: 100%;
                 height: 281px;
             }
-    
                 .bg_map{
                     background: url(../imges/map.jpg);
                     width: 100%;
                     height: 100%;
                     @include onlylange(600px){
                         background-position: 50% 50%;
-
                     }
                 }
                 
@@ -210,7 +226,6 @@ div.wrapper{
                 @include onlylange(950px){
                     width: 100%;
                 }
-    
                 h2{
                     margin-top: 33px;
                     padding-left: 39px;
@@ -231,7 +246,6 @@ div.wrapper{
                         margin-top: 15px;
                         margin-bottom: 15px;
                     }
-    
                 }
                 .wrapper_footer{
                     display: flex;
@@ -251,7 +265,6 @@ div.wrapper{
                     @include onlylange(600px){
                     flex-direction: column;
                 }
-
                     a{
                         font-family: 'Montserrat';
                         font-style: normal;

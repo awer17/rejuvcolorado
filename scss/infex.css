@@ -66,23 +66,11 @@ button {
   border-style: none;
   border: 1px solid #353535;
   background: #fff;
-  transition: 0.8s;
-  cursor: pointer;
 }
 
 button.btn_pink {
   background: #D63FD8;
   color: #fff;
-  border: none;
-}
-button.btn_pink:hover {
-  background: #E91CEC;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
-}
-
-button.btn_white:hover {
-  background: rgba(214, 63, 216, 0.7);
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 div.wrapper {
@@ -291,4 +279,25 @@ div.wrapper footer .wrap .wrap_contacts .wrapper_footer a:hover {
 }
 div.wrapper footer .wrap .wrap_contacts .wrapper_footer .network {
   margin-top: 15px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.first_content {
+  background: url(../imges/bg_main.jpg);
+  position: relative;
+  padding-top: 174px;
+}
+.first_content p.item {
+  width: 455px;
+  color: #fff;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+.first_content button {
+  display: block;
+  margin-bottom: 15px;
+}
+.first_content .btn_white {
+  border-color: #fff;
+  background: none;
+  color: #fff;
+}/*# sourceMappingURL=infex.css.map */
