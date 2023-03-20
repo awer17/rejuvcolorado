@@ -101,13 +101,15 @@ button.btn_pink{
     border: none;
     &:hover{
         background: #E91CEC;
-        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4)
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
         
     }
 }
 button.btn_white{
+    background: none;
     &:hover{
-        background: rgba(214, 63, 216, 0.7);
+        // background: rgba(214, 63, 216, 0.7);
+        background: rgba(228, 64, 228, 0.31);;
         box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4)
     }
 

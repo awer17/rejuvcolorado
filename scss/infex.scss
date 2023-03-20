@@ -1,21 +1,231 @@
- @import "style.scss";
+@import "style.scss";
+
+//section first content
 .first_content{
     background: url(../imges/bg_main.jpg);
     position: relative;
     padding-top: 174px;
-    p.item{
-        width: 455px;
-        color: $white;
-        margin-top: 43px;
-        margin-bottom: 43px;
+    padding-bottom: 144px;
+    .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        p.item{
+            width: 455px;
+            color: $white;
+            margin-top: 43px;
+            margin-bottom: 28px;
+        }
+        button{
+            display: block;
+            margin-top: 15px;
+        }
+        .btn_white{
+            border-color: $white;
+            color: $white;
+        }
+        .right_item{
+            width: 320px;
+            margin-top: 160px;
+            padding: 25px;
+            border: solid 1px $white;
+            height: 100%;
+            p{
+                color: $white;
+                width: 166px;
+                margin: 0;
+            }
+            a{
+                display: block;
+                color: $white;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+        }
     }
-    button{
-        display: block;
-        margin-bottom: 15px;
+    .bg_ping{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: rgba(228, 64, 228, 0.31);;
     }
-    .btn_white{
-        border-color: $white;
-        background:none;
-        color: $white;
+}
+//section title_about
+.title_about{
+    padding-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ._img{
+        position: relative;
+        ._bg{
+            position: relative;
+            z-index: 1;
+            background: $violet;
+            border-radius: 5px;
+            width: 360px;
+            img{
+                text-align: center;
+                display: block;
+                padding: 125px 0px;
+                margin: 0 auto;
+            }
+        }
+        ._shadow{
+            width: 360px;
+            height: 360px;
+            background: rgba(228, 64, 228, 0.3);
+            position: absolute;
+            border-radius: 5px;
+            top: 30px;
+            left: 30px;
+        }
+        
+    }
+    ._description{
+        width: 697px;
+        padding-top: 65px;
+    }
+}
+
+//section services
+.services{
+    h2{
+        margin-top: 186px;
+        margin-bottom: 34px;
+        cursor: pointer;
+        &:hover{
+            color: $grey_black;
+        }
+    }
+    ._slider{
+        position: relative;
+        padding-bottom: calc(48px + 26px);
+        margin-bottom: 17px;
+        ._wrap{
+            ._slide{
+                display: grid;
+                grid-template-columns: 271px 271px 271px 271px;
+                grid-template-rows: 368px 368px;
+                grid-row-gap: 24px;
+                justify-content: space-between;
+                ._service_wpar{
+                    width: 100%;
+                    cursor: pointer;
+                    transition: .9s;
+                    &:hover{
+                        img{
+                            border: 1px solid #BEBEBE;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        }
+                        p._title{
+                            margin-bottom: 4px;
+                            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        }
+                        p._subtitle-hover{
+                            display: inline-block;
+                            color: $grey_black;
+                        }
+                        p._subtitle{
+                            display: none;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        height: 271px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                        transition: .8s;
+                    }
+                    p._title{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #353535;
+                        margin-top: 15px;
+                        margin-bottom: 5px;
+                        transition: .8s;
+                    }
+                    ._line{
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background: #BEBEBE;
+                    }
+                    ._subtitle, ._subtitle-hover{
+                        transition: .8s;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 130%;
+                        color: $grey;
+                        margin-top: 10px;
+                        margin-bottom: 0;
+                    }
+                    ._subtitle-hover{
+                        display: none;
+                    }
+                    &:nth-child(3), &:nth-child(4) { 
+                        grid-column: span 2;
+                    }
+                }
+            }
+        }
+        ._btn-nav{
+            display: inline-block;
+            padding: 9px 17px 9px 13px;
+            background: #E9E9E9;
+            border-radius: 50%;
+            transition: .8s;
+            position: absolute;
+            bottom: 0;
+            cursor: pointer;
+            &:hover{
+                background: $violet;
+                span{
+                    background: url(../imges/prev_white.svg);
+                }
+            }
+            span{
+                display: block;
+                width: 18px;
+                height: 30px;
+                background: url(../imges/prev_grey.svg);
+            }
+        }
+        ._next{
+            transform: rotate(180deg);
+            right: 0;
+        }
+        .pagination{
+            width: 640px;
+            height: 10px;
+            background: #575757;
+            border-radius: 11px;
+            position: absolute;
+            bottom: 21px;
+            left: calc(50% - 320px);
+            cursor: pointer;
+        }
+    }
+    .btn_pink{
+        margin-left: 215;
+    }
+    ._btn-list{
+        width: 770px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .btn_white{
+        }
     }
 }
