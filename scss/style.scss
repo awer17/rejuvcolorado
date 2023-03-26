@@ -61,9 +61,67 @@ html {
 body{
     font-family: "Montserrat";
 }
+
+//burger menu
 .menu_icon{
     display: none;
+    @include onlylange(1050px){
+        display: block;
+        width: 24px;
+        height: 18px;
+        position: fixed;
+        z-index: 10;
+        cursor: pointer;
+        top: 32px;
+        left: 20px;
+        span{
+            content: "";
+            background-color: $pink;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            top: 8px;
+            transform: scale(1) translate(0px, -50%);
+            transition: 0.8s;
+        }
+        &::before{
+            content: "";
+            background-color: $pink;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            top: 0px;
+            transform: scale(1) translate(0px, -50%);
+            transition: 0.8s;
+        }
+        &::after{
+                content: "";
+                background-color: $pink;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                bottom: 0;
+                transition: 0.8s;
+        }
+    }
 }
+.menu_icon._active{
+    &::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(1px, -50%);
+    
+    }
+    &::after{
+        top: 50%;
+        transform: rotate(45deg) translate(-1px, -50%);
+    
+    }
+    span{
+        display: none;
+    }    
+}
+
+// text
 h1{
     @include textstyle-h1($white)
 }
@@ -122,9 +180,9 @@ div.wrapper{
         max-width: 1200px;
         margin: 0 auto;
         @include onlylange(1300px){
-            max-width: 90%;
+            max-width: 95%;
         }
-        @include onlylange(1000px){
+        @include onlylange(1050px){
             max-width: 95%;
         }
         @include onlylange(430px){
@@ -139,16 +197,26 @@ div.wrapper{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            @include onlylange(430px){
-                flex-direction: column;
+            @include onlylange(600px){
+                justify-content: center;
             }
             .wrap_nav{
+                a{
+                    @include onlylange(1050px){
+                        margin-left: 45px;
+                    }
+                    @include onlylange(600px){
+                        margin-left: 0;
+                    }
+                }
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
-                @include onlylange(430px){
-                width: 100%;
+                nav{
+                    @include onlylange(1050px){
+                        display: none;
+                    }
                 }
                 nav ul{
                     display: flex;
@@ -176,12 +244,22 @@ div.wrapper{
                 width: 179px;
                 height: 38px;
                 margin-left: 15px;
+                @include onlylange(430px){
+                    margin-left: 0;
+                }
             }
             .wrap{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+                @include onlylange(600px){
+                    width: 100%;
+                    margin-top: 15px;
+                }
+                @include onlylange(430px){
+                    flex-direction: column-reverse
+                }
                 .date{
                     font-family: 'Montserrat';
                     font-style: normal;
