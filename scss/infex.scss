@@ -501,12 +501,25 @@
 .advantage{
     padding-top: 130px;
     padding-bottom: 180px;
+    @include onlylange(500px){
+        padding-top: 50px;
+        padding-bottom: 60px;    
+    }
     ._wrap{
         margin-top: 70px;
         display: grid;
         grid-template-columns: 268px 268px 268px;
         justify-content: space-between;
         grid-row-gap: 114px;
+        @include onlylange(960px){
+            grid-template-columns: 268px 268px;
+            justify-content: space-around;
+            grid-row-gap: 80px;
+        }
+        @include onlylange(650px){
+            grid-template-columns: 268px;
+            grid-row-gap: 40px;
+        }
 
         ._item{
             border-bottom: solid 1px $grey;
@@ -514,12 +527,10 @@
             flex-wrap: wrap;
             width: 100%;
             align-items: flex-end;
-            // width: 268px;
             ._title{
                 font-style: normal;
                 font-weight: 600;
                 font-size: 60px;
-                // line-height: 73px;
                 text-transform: uppercase;
                 color: $violet;
             }

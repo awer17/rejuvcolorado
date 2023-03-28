@@ -52,6 +52,9 @@ html{
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    @include onlylange(364px){
+        font-size: 30px;
+    }
 }
 
 @mixin textstyle-h3($c) {
