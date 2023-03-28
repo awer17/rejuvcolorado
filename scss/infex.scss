@@ -553,11 +553,22 @@
     background: $violet;
     padding-top: 131px;
     padding-bottom: 135px;
+    @include onlylange(500px){
+        padding-top: 50px;
+        padding-bottom: 60px;    
+    }
     h2{
         width: 649px;
         text-align: center;
         color: $white;
         margin: 0 auto;
+        @include onlylange(1100px){
+            width: 70%;
+        }
+        @include onlylange(611px){
+            width: 90%;
+        }
+
     }
     p{
         padding-top: 32px;
@@ -566,9 +577,21 @@
         width: 541px;
         color: $white;
         margin: 0 auto;
+        @include onlylange(1100px){
+            padding-bottom: 60px;
+        }
+        @include onlylange(611px){
+            width: 80%;
+        }
+        @include onlylange(500px){
+            width: 90%;
+        }
     }
     button{
         display: block;
         margin: 0 auto;
+        @include onlylange(500px){
+            width: 90%;
+        }
     }
 }
