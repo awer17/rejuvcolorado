@@ -14,6 +14,10 @@ $white: #fff;
 $pink: #D63FD8;
 $violet: #763786;
 
+html{
+    scroll-behavior: smooth;
+}
+
 @mixin textstyle-h1($c) {
     font-family: 'Montserrat';
     font-style: normal;
@@ -74,7 +78,6 @@ body{
 
 //burger menu
 .menu_icon{
-    display: none;
     @include onlylange(1050px){
         display: block;
         width: 24px;
@@ -131,6 +134,21 @@ body{
     }    
 }
 
+a._active{
+    position: absolute;
+    z-index: 11;
+    display: block;
+    margin-right: 20px;
+    right: 0;
+    top: 20px;
+}
+
+div.wrapper header div.wrap_nav{
+    
+    nav._active{
+        top: 0;
+    }
+}
 // text
 h1{
     @include textstyle-h1($white)
@@ -225,7 +243,30 @@ div.wrapper{
                 align-items: center;
                 nav{
                     @include onlylange(1050px){
-                        display: none;
+                        display: block;
+                        position: fixed;
+                        z-index: 10;
+                        top: -115%;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: $violet;
+                        padding-top: 45px;
+                        transition: .8s;
+                        ul{
+                            flex-direction: column;
+                            margin-top: 30px;
+                            margin-bottom: 45px;
+                            li{
+                                margin-top: 10px;
+                                margin-left: 45px;
+                                a{
+                                    margin-left: 0;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
                     }
                 }
                 nav ul{
