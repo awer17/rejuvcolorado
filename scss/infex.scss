@@ -132,19 +132,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include onlylange(768px){
+        padding-top: 25px;
+    }
     ._img{
         position: relative;
+        @include onlylange(1200px){
+            margin-top: 20px;
+        }
+        @include onlylange(820px){
+            margin-top: 45px;
+        }
+        @include onlylange(768px){
+            display: none;
+        }
         ._bg{
             position: relative;
             z-index: 1;
             background: $violet;
             border-radius: 5px;
             width: 360px;
+            @include onlylange(1200px){
+                width: 200px;
+            }
             img{
                 text-align: center;
                 display: block;
                 padding: 125px 0px;
                 margin: 0 auto;
+                @include onlylange(1200px){
+                    width: 80%;
+                    padding: 72px 0px;
+                }
             }
         }
         ._shadow{
@@ -155,12 +174,25 @@
             border-radius: 5px;
             top: 30px;
             left: 30px;
+            @include onlylange(1200px){
+                width: 200px;
+                height: 200px;
+                top: 15px;
+                left: 15px;
+            }
         }
         
     }
     ._description{
         width: 697px;
         padding-top: 65px;
+        @include onlylange(1200px){
+            padding-top: 0;
+            width: calc( 100% - 240px);
+        }
+        @include onlylange(768px){
+            width: 100%;
+        }
     }
 }
 
