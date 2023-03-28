@@ -26,6 +26,12 @@ html{
     line-height: 73px;
     text-transform: capitalize;
     color: $c;
+    @include onlylange(1200px){
+        font-size: 50px;
+    }
+    @include onlylange(500px){
+        font-size: 45px;
+    }
 }
 
 @mixin textstyle-h2($c) {
@@ -56,6 +62,9 @@ html{
     line-height: 46px;
     text-transform: uppercase;
     color: $c;
+    @include onlylange(500px){
+        font-size: 30px;
+    }
 }
 
 @mixin textstyle-p($c) {
@@ -67,6 +76,9 @@ html{
     text-align: justify;
     text-transform: uppercase;
     color: $c;
+    @include onlylange(500px){
+        font-size: 13px;
+    }
 }
 
 html {

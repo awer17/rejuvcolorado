@@ -7,21 +7,75 @@
     padding-top: 173px;
     padding-bottom: 144px;
     background-position: center;
+    @include onlylange(1000px){
+        padding-top: 136px;
+        padding-bottom: 113px;
+    }
+    @include onlylange(810px){
+        background-position: 28% 50%;
+        padding-top: 100px;
+    }
+    @include onlylange(770px){
+        background-position: 30% 50%;
+    }
+    @include onlylange(640px){
+        background-position: 35% 50%;
+    }
+    @include onlylange(540px){
+        background-position: 38% 50%;
+    }
+    @include onlylange(400px){
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
     .wrap{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
         z-index: 1;
+        @include onlylange(810px){
+            flex-direction: column
+        }
+        .left_item{
+            @include onlylange(1000px){
+                width: 45%;
+            }
+            @include onlylange(810px){
+                width: 95%;
+                margin-left: 10px;
+            }
+            @include onlylange(500px){
+                margin-left: 0;
+                width: 100%;
+            }
+        }
         p.item{
             width: 455px;
             color: $white;
             margin-top: 43px;
             margin-bottom: 28px;
+            @include onlylange(1000px){
+                width: 100%;
+            }
+            @include onlylange(810px){
+                margin-top: 22px;
+                margin-bottom: 19px;
+                width: 450px;
+            }
+            @include onlylange(500px){
+                width: 100%;
+                margin-top: 10px;
+            }
+        
         }
         button{
             display: block;
             margin-top: 15px;
+            @include onlylange(500px){
+                width: 100%;
+            }
         }
         .btn_white{
             border-color: $white;
@@ -33,6 +87,18 @@
             padding: 25px;
             border: solid 1px $white;
             height: 100%;
+            @include onlylange(810px){
+                margin-left: 10px;
+                margin-top: 23px;
+            }
+            @include onlylange(500px){
+                margin-top: 30px;
+                margin-left: 0;
+                width: 300px;
+            }
+            @include onlylange(400px){
+                width: 210px;
+            }
             p{
                 color: $white;
                 width: 166px;
@@ -54,7 +120,10 @@
         height: 100%;
         right: 0;
         top: 0;
-        background: rgba(228, 64, 228, 0.31);;
+        background: rgba(228, 64, 228, 0.31);
+        @include onlylange(810px){
+            display: none;
+        }
     }
 }
 //section title_about
