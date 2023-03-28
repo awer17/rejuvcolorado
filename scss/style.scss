@@ -47,8 +47,8 @@ html{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    @include onlylange(1000px){
-        font-size: 30px;
+    @include onlylange(900px){
+        font-size: 35px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -62,8 +62,14 @@ html{
     line-height: 46px;
     text-transform: uppercase;
     color: $c;
+    @include onlylange(1100px){
+        font-size: 32px;
+    }
     @include onlylange(500px){
-        font-size: 30px;
+        font-size: 28px;
+    }
+    @include onlylange(387px){
+        font-size: 20px;
     }
 }
 
