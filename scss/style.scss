@@ -134,6 +134,7 @@ body{
     }    
 }
 
+//nav menu 
 a._active{
     position: absolute;
     z-index: 11;
@@ -144,11 +145,12 @@ a._active{
 }
 
 div.wrapper header div.wrap_nav{
-    
     nav._active{
         top: 0;
     }
 }
+
+
 // text
 h1{
     @include textstyle-h1($white)
@@ -164,6 +166,8 @@ h3{
 p{
     @include textstyle-p($grey)
 }
+
+//button
 button{
     width: 365px;
     height: 50px;
@@ -201,6 +205,8 @@ button.btn_white{
 
 }
 
+
+//headeer
 div.wrapper{
     max-width: 1600px;
     margin: 0 auto;
@@ -241,6 +247,27 @@ div.wrapper{
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+                nav ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li{
+                        margin-left: 16px;
+                        a{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            transition: 0.8s;
+                            &:hover{
+                                border-bottom: solid 2px;
+                            }
+                        }
+                    }
+                }
                 nav{
                     @include onlylange(1050px){
                         display: block;
@@ -259,33 +286,12 @@ div.wrapper{
                             margin-bottom: 45px;
                             li{
                                 margin-top: 10px;
-                                margin-left: 45px;
+                                margin-left: 50px;
                                 a{
                                     margin-left: 0;
                                     font-size: 16px;
                                     line-height: 20px;
                                 }
-                            }
-                        }
-                    }
-                }
-                nav ul{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    li{
-                        margin-left: 16px;
-                        a{
-                            font-family: 'Montserrat';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 12px;
-                            line-height: 15px;
-                            text-transform: uppercase;
-                            color: #FFFFFF;
-                            transition: 0.8s;
-                            &:hover{
-                                border-bottom: solid 2px;
                             }
                         }
                     }
