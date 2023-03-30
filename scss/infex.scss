@@ -378,7 +378,9 @@
             align-items: center;
         }
         .btn_white{
-            margin-top: 15px;
+            @include onlylange(810px){
+                margin-top: 15px;
+            }
             @include onlylange(500px){
                 width: 100%;
             }
@@ -596,6 +598,7 @@
         }
     }
 }
+
 .discount{
     width: 100%;
     background: $violet;
