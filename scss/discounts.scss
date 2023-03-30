@@ -1,0 +1,149 @@
+@import "style.scss";
+
+//discouts
+.discounts{
+    padding-top: 145px;
+    padding-bottom: 144px;
+    h1{
+        @include textstyle-h2($grey);
+        margin-top: 45px;
+    }
+    ._wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 530px 530px;
+        grid-template-rows: 432px 432px;
+        justify-content: space-between;
+        grid-row-gap: 55px;
+        margin-top: 45px;
+        ._wrap{
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .item{
+                ._card{
+                    width:calc(380px - 34px);
+                    height: calc(225px - 34px);
+                    background: $violet;
+                    padding: 17px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    img{
+                        width: 116px;
+                    }
+                    h4{
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 37px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin: 0 auto;
+                    }
+                    p{
+                        margin: 0;
+                        margin-left: auto;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+                ._title{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    color: #353535;
+                    margin: 0;
+                    margin-top: 14px;
+                }
+                ._text{
+                    margin: 0;
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 130%;
+                    color: #656363;
+                    padding-top: 12px;
+                    border-top: 1px solid #BEBEBE;
+                }
+    
+            }
+            button{
+                display: block;
+                margin: 0 auto;
+                margin-top: auto;
+            }
+        }
+    }
+    .subtitle{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #656363;
+        margin: 0;
+        margin-top: 29px;
+        text-align: center;
+    }
+}
+
+//advantage
+.advantage{
+    padding-top: 130px;
+    padding-bottom: 180px;
+    @include onlylange(500px){
+        padding-top: 50px;
+        padding-bottom: 60px;    
+    }
+    ._wrap{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 268px 268px 268px;
+        justify-content: space-between;
+        grid-row-gap: 114px;
+        @include onlylange(960px){
+            grid-template-columns: 268px 268px;
+            justify-content: space-around;
+            grid-row-gap: 80px;
+        }
+        @include onlylange(650px){
+            grid-template-columns: 268px;
+            grid-row-gap: 40px;
+        }
+
+        ._item{
+            border-bottom: solid 1px $grey;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: flex-end;
+            ._title{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 60px;
+                text-transform: uppercase;
+                color: $violet;
+            }
+            ._subtitle{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: $grey_black;
+                width: 171px;
+                margin-left: 13px;
+                margin-bottom: 11px;
+            }
+        }
+    }
+}
