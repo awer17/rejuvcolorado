@@ -224,7 +224,7 @@
             display: grid;
             grid-template-columns: 271px 271px 271px 271px;
             grid-template-rows: 368px 368px;
-            // grid-row-gap: 24px;
+            grid-row-gap: 24px;
             justify-content: space-between;
             @include onlylange(1200px){
                 grid-template-columns: 271px 271px 271px;
