@@ -1,3 +1,19 @@
-<svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.352647 15.296L14.6603 28.6723C15.1291 29.1103 15.888 29.1096 16.356 28.67C16.8236 28.2306 16.8224 27.5186 16.3536 27.0803V27.0803C9.07305 20.2736 9.0734 8.72651 16.3541 1.91999V1.91999C16.8229 1.48159 16.8241 0.770123 16.3565 0.330591C16.1219 0.110259 15.8146 9.15527e-05 15.5072 9.15527e-05C15.2007 9.15527e-05 14.8945 0.109522 14.6604 0.328325L0.352648 13.7043C0.12687 13.9149 0.000175297 14.2015 0.000175224 14.5001C0.00017515 14.7987 0.127232 15.085 0.352647 15.296Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW (Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.4202mm" height="7.673mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 412.96 716.86"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M8.71 378.1l353.68 330.66c11.58,10.82 30.34,10.81 41.92,-0.07 11.56,-10.86 11.53,-28.46 -0.07,-39.3l0 0c-179.97,-168.25 -179.96,-453.69 0.02,-621.94l0 0c11.58,-10.84 11.61,-28.42 0.06,-39.29 -5.8,-5.45 -13.4,-8.17 -20.99,-8.17 -7.58,0 -15.14,2.7 -20.94,8.11l-353.68 330.65c-5.58,5.2 -8.71,12.29 -8.71,19.67 0,7.38 3.14,14.46 8.71,19.68z"/>
+ </g>
 </svg>

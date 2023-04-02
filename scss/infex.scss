@@ -211,39 +211,54 @@
         &:hover{
             color: $grey_black;
         }
+        @include onlylange(810px){
+            margin-top: 90px;
+        }
     }
     ._slider{
         position: relative;
         padding-bottom: calc(48px + 26px);
         margin-bottom: 17px;
+        @include onlylange(1150px){
+            max-width:  861px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
         @include onlylange(810px){
             padding-bottom: 0;
         }
         ._wrap{
             width: 100%;
-            display: grid;
-            grid-template-columns: 271px 271px 271px 271px;
-            grid-template-rows: 368px 368px;
-            grid-row-gap: 24px;
-            justify-content: space-between;
-            @include onlylange(1200px){
-                grid-template-columns: 271px 271px 271px;
-                max-width: 861px;
-                margin: 0 auto;
+            // display: grid;
+            // grid-template-columns: 271px 271px 271px 271px;
+            // grid-template-rows: 368px 368px;
+            // grid-row-gap: 24px;
+            // justify-content: space-between;
+            height: 760px;
+            // @include onlylange(1200px){
+            //     grid-template-columns: 271px 271px 271px;
+            //     max-width: 861px;
+            //     margin: 0 auto;
+            // }
+            // @include onlylange(905px){
+            //     grid-template-columns: 271px 271px;
+            //     max-width: 566px;
+            // }
+            // @include onlylange(610px){
+            //     grid-template-columns: 80%;
+            //     justify-content: center;
+            //     height: 368px;
+            // }
+            // @include onlylange(610px){
+            //     grid-template-columns: 95%;
+            // }
+            @include onlylange(600px){
+                height: 368px;
             }
-            @include onlylange(905px){
-                grid-template-columns: 271px 271px;
-                max-width: 566px;
-            }
-            @include onlylange(610px){
-                grid-template-columns: 80%;
-                justify-content: center;
-            }
-            @include onlylange(610px){
-                grid-template-columns: 95%;
-            }
+            
             ._service_wpar{
-                    width: 100%;
+                    width: 274px;
+                    height: 368px;
                     cursor: pointer;
                     transition: .9s;
                     &:hover{
@@ -302,7 +317,8 @@
                         display: none;
                     }
                     &:nth-child(3), &:nth-child(4) { 
-                        grid-column: span 2;
+                        width: 581px;
+                        // grid-column: span 2;
                         @include onlylange(1200px){
                             grid-column: span 1;
                         }
@@ -346,15 +362,19 @@
             background: #575757;
             border-radius: 11px;
             position: absolute;
-            bottom: 21px;
+            top: calc( 100% - 29px);
             left: calc(50% - 320px);
-            cursor: pointer;
+            span{
+                background: #D6D6D6;
+                border-radius: 11px;
+            }
+            
             @include onlylange(810px){
                 width: 80%;
                 position: sticky;
                 left: 0;
                 margin: 0 auto;
-                margin-top: 25px;
+                margin-top: 35px;
             }
             @include onlylange(610px){
                 width: 90%;
