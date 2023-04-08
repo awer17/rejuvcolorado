@@ -16,7 +16,7 @@ new Swiper('.swiper',{
     breakpoints: {
         300:{
             slidesPerView: 1.2,
-            spaceBetween: 12,
+            spaceBetween: 20,
             seed: 800,
             grid: {
                 rows: 1,
@@ -32,7 +32,7 @@ new Swiper('.swiper',{
             seed: 800,
         },
         // when window width is >= 480px
-        800: {
+        900: {
             slidesPerView: 3,
             spaceBetween: 24,
             grid: {
@@ -40,12 +40,5 @@ new Swiper('.swiper',{
             },
             seed: 800,
         },
-        1150: {
-            slidesPerView: 4,
-            spaceBetween: 24,
-            grid: {
-                rows: 2,
-            },
-        }
-      }
+    }
 });
