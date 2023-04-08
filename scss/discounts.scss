@@ -4,7 +4,7 @@
 .discounts{
     padding-top: 145px;
     @include onlylange(500px) {
-        padding-top: 60px;
+        padding-top: 61px;
     }
     h1{
         @include textstyle-h2($grey);
