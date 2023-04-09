@@ -7,5 +7,3 @@ menuIcon.addEventListener('click' , function(event){
     navMenu.classList.toggle('_active');
     logoNav.classList.toggle('_active');
 })
-
-console.log(menuIcon);

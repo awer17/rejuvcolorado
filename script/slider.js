@@ -1,4 +1,3 @@
-
 new Swiper('.swiper',{
     navigation: {
         nextEl: '._next',
@@ -31,7 +30,6 @@ new Swiper('.swiper',{
             },
             seed: 800,
         },
-        // when window width is >= 480px
         900: {
             slidesPerView: 3,
             spaceBetween: 24,
