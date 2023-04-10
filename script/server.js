@@ -1,7 +1,7 @@
 
 async function getSliderServis() {
             
-    const file = '/json/services.json';
+    const file = './json/services.json';
     let response = await fetch(file, {
         method: 'GET'
     });
