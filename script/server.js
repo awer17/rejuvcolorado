@@ -26,10 +26,7 @@ function servisItemlist(data){
         <p class="_subtitle">${element.title}</p>
 </div>
 `  
-
-        console.log(element)
     });
-    console.log(data[1])
 }
 
 getSliderServis()
