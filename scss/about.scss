@@ -3,8 +3,8 @@
 //section about
 
 section{
-    padding-top: 175px;
-    padding-bottom: 97px;
+    padding-top: 120px;
+    padding-bottom: 60px;
     @include onlylange(820px){
         padding-top: 90px;
     }
@@ -35,6 +35,7 @@ section{
         ._right-items{
             width: 332px;
             position: relative;
+            margin-right: 10px;
             @include onlylange(1200px){
                 width: 50%;
             }
@@ -63,18 +64,91 @@ section{
                 width: 100%;
                 height: 300px;
                 position: absolute;
-                background: rgba(228, 64, 228, 0.3);
+                background: rgba(228, 64, 228, 0.09);
                 border-radius: 5px;
-                left: 21px;
-                top: 21px;
+                left: 10px;
+                top: 10px;
                 @include onlylange(450px){
                     display: none;
                 }
+            }
+        }
+    }
+    ._img-salon{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include onlylange(740px){
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            width: 49%;
+            height: 356px;
+            border-radius: 5px;
+            object-fit: cover;
+            @include onlylange(740px){
+                width: 75%;
+                margin-top: 20px;
+                height: 300px;
+            }
+            @include onlylange(530px){
+                width: 95%;
+            }
     
+        }
+    }
+    ._biogravity{
+        padding-top: 130px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include onlylange(980px){
+            flex-direction: column;
+        }
+        @include onlylange(550px){
+            padding-top: 60px;
+        }
+        img{
+            border-radius: 5px;
+            width: 420px;
+            height: 568px;
+            object-fit: cover;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            @include onlylange(980px){
+                margin-bottom: 20px;
+                height: 500px;
+                object-position: 50% 25%;
+            }
+            @include onlylange(550px){
+                width: 300px;
+                height: 380px;
+            }
+            @include onlylange(370px){
+                width: 90%;
+                height: 300px;
             }
 
+    
         }
-
+        ._description{
+            width: 55%;
+            @include onlylange(1100px){
+                width: 50%;
+            }
+            @include onlylange(980px){
+                width: 90%;
+            }
+    
+        }
+    }
+    ._next{
+        flex-direction: row-reverse;
+        margin-bottom: 60px;
+        @include onlylange(980px){
+            flex-direction: column;
+        }
     }
     button{
         display: block;
