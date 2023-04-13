@@ -4,7 +4,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "botox",
-    "img": "imges/service/botox.jpg",
+    "img": "imges/servises/botox.jpg",
     "fideo": ""},
 
     {"nameServes": "Dermal fillers",
@@ -12,7 +12,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "Dermal",
-    "img": "imges/service/dermal_filler.jpg",
+    "img": "imges/servises/dermal_filler.jpg",
     "fideo": ""},
 
     {"nameServes": "PRP plasma",
@@ -20,7 +20,7 @@
     "description":"",
     "superDescription": "PRP plasma",
     "imgTitle" : "",
-    "img": "imges/service/prp.jpg",
+    "img": "imges/servises/prp.jpg",
     "fideo": ""},
 
     {"nameServes": "Microneedling",
@@ -28,7 +28,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "Microneedling",
-    "img": "imges/service/microneedling.jpg",
+    "img": "imges/servises/microneedling.jpg",
     "fideo": ""},
 
     {"nameServes": "Moxi",
@@ -36,7 +36,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "moxi",
-    "img": "imges/service/moxi1.jpg",
+    "img": "imges/servises/moxi1.jpg",
     "fideo": ""},
 
     {"nameServes": "BBL +hero / IPL photofacial",
@@ -44,7 +44,7 @@
     "description":"<p> BBL HERO™ by Sciton BroadBand Light (BBL) now with High Energy Rapid Output HERO, can quickly deliver Forever results anywhere on the body!</p> <ul> <li>NEW BBL HERO is 4x faster, delivers 3x the peak power, and is 2x cooler than any IPL on the market</li><li>BBL HERO delivers more power, better results, and faster treatment times often with fewer treatments needed</li><li>Comfortable, fast, effective, low-to-no downtime</li></ul><p>The light energy delivered by BBL will stimulate cells to regenerate and typically with the first treatment you will start to see smoother, more even and vibrant skin. The photothermal energy will eliminate fine vessels that cause redness and reduce unwanted melanin that produces age and sun spots. Your skin will feel smoother, fine lines and pores will be less noticeable, and sunspots or uneven pigmentation will fade.</p><ul><li>Correct age spots and redness for smoother, healthier and vibrant skin</li><li>Pigmented lesions such as dyschromia and ephelides</li><li> Vascular Lesions such as rosacea, telangietasia and cherry angiomas</li><li>Deeper lesions on darker skin types </li></ul> ",
     "superDescription": "",
     "imgTitle" : "bbl+hero",
-    "img": "imges/service/bbl_ipl.jpg",
+    "img": "imges/servises/bbl_ipl.jpg",
     "fideo": ""},
 
     {"nameServes": "BBL Forever Young",
@@ -52,7 +52,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "",
-    "img": "imges/service/bbl_forever_young.jpg",
+    "img": "imges/servises/bbl_forever_young.jpg",
     "fideo": ""},
 
     {"nameServes": "Forever Clear (Acne)",
@@ -60,7 +60,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "",
-    "img": "imges/service/forever-clear.jpeg",
+    "img": "imges/servises/forever-clear.jpg",
     "fideo": ""},
 
     {"nameServes": "Forever Bare (Hair Removal)",
@@ -68,7 +68,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "",
-    "img": "imges/service/laser_hair_removal.jpeg",
+    "img": "imges/servises/laser_hair_removal.jpg",
     "fideo": ""},
 
     {"nameServes": "Peels",
@@ -76,7 +76,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "",
-    "img": "imges/service/peels.jpeg",
+    "img": "imges/servises/peels.jpg",
     "fideo": ""},
 
     {"nameServes": "Medical facials",
@@ -84,7 +84,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "",
-    "img": "imges/service/medical_facials.jpg",
+    "img": "imges/servises/medical_facials.jpg",
     "fideo": ""},
 
     {"nameServes": "Microdermabrasion",
@@ -92,7 +92,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "",
-    "img": "imges/service/micro.jpg",
+    "img": "imges/servises/micro.jpg",
     "fideo": ""},
 
     {"nameServes": "Dermaplaning",
@@ -100,7 +100,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "Dermaplaning",
-    "img": "imges/service/dermaplaning.jpeg",
+    "img": "imges/servises/dermaplaning.jpg",
     "video": ""},
 
     {"nameServes": "Waxing",
@@ -108,7 +108,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : "Waxing",
-    "img": "imges/service/waxing.jpeg",
+    "img": "imges/servises/waxing.jpg",
     "video": ""},
 
     {"nameServes": "Brows & lashes tint",
@@ -116,7 +116,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : " ",
-    "img": "imges/service/brow.jpeg",
+    "img": "imges/servises/brow.jpg",
     "fideo": ""},
 
     {"nameServes": "Personalized skincare",
@@ -124,7 +124,7 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : " ",
-    "img": "imges/service/personalized-skincare.jpeg",
+    "img": "imges/servises/personalized-skincare.jpg",
     "fideo": ""},
 
     {"nameServes":"Skin analysis",
@@ -132,6 +132,6 @@
     "description":"",
     "superDescription": "",
     "imgTitle" : " ",
-    "img": "imges/service/skin-analysis.jpeg",
+    "img": "imges/servises/skin-analysis.jpg",
     "fideo": ""}
 ]
