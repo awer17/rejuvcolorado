@@ -22,7 +22,7 @@ section{
             padding-bottom: 5px;
             height: 100%;
             padding: 7px;
-            border-radius: 3px;
+            border-radius: 7px;
             padding-right: 8px;
             @include onlylange(1190px){
                 display: inline;
@@ -254,6 +254,105 @@ section{
             }
             @include onlylange(610px){
                 width: 90%;
+            }
+        }
+    }
+    ._descripcion{
+        width: 100%;
+        padding: 10px;
+        padding-left: 0;
+        button{
+            width: 150px;
+            height: 30px;
+        }
+        h3{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 49px;
+            text-transform: uppercase;
+            color: #656363;
+            margin: 0;
+            margin-left: 200px;
+            @include onlylange(580px){
+                margin: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        ._wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @include onlylange(580px){
+                flex-direction: column-reverse;
+            }
+            p{
+                width: 534px;
+                @include onlylange(890px){
+                    width: 55%;
+                }
+                @include onlylange(890px){
+                    width: 50%;
+                }
+                @include onlylange(580px){
+                    width: 90%;
+                }
+            }
+            ._grafic{
+                position: relative;
+                @include onlylange(580px){
+                    width: 90%;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                img{
+                    position: relative;
+                    z-index: 1;
+                    width: 270px;
+                    height: 265px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    border: solid 1px #D9D9D9;
+                    @include onlylange(890px){
+                        width: 250px;
+                        height: 230px;
+                    }
+                    @include onlylange(580px){
+                        width: 100%;
+                    }
+                }
+                ._shadow{
+                    background: rgba(228, 64, 228, 0.16);
+                    width: 270px;
+                    height: 265px;
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    border-radius: 5px;
+                    @include onlylange(890px){
+                        width: 250px;
+                        height: 230px;
+                    }
+                    @include onlylange(580px){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        ._additional{
+            margin-left: 30px;
+            margin-bottom: 30px;
+            @include onlylange(580px){
+                width: 90%;
+                margin: 0 auto;
+                
+            }
+            li{
+                @include textstyle-p($grey);
+                list-style-type: disc;
+                margin-left: 30px;
             }
         }
     }
