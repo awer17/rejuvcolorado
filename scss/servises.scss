@@ -3,11 +3,33 @@
 section{
     padding-top: 51px;
     ._list{
+        align-items: center;
         display: flex;
         justify-content: space-between;
+        @include onlylange(600px){
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
         ._servises{
-            @include textstyle-p($grey_black);
+            display: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: #353535;
+            padding-bottom: 5px;
             height: 100%;
+            padding: 7px;
+            border-radius: 3px;
+            padding-right: 8px;
+            @include onlylange(1190px){
+                display: inline;
+            }
+            @include onlylange(420px){
+                width: 95%;
+            }
         }
     }
     h1{
@@ -19,6 +41,9 @@ section{
         justify-content: space-between;
         ._left-items{
             width: 265px;
+            @include onlylange(1190px){
+                display: none;
+            }
             li.hover{
                 font-family: 'Montserrat';
                 font-style: normal;
@@ -71,7 +96,10 @@ section{
     padding-left: 15px;
     margin-bottom: 20px;
     @include onlylange(1190px){
-        width: 75%;
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0 auto;
     }
     ._slider{
         position: relative;
@@ -236,6 +264,21 @@ section{
     width: 770px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 30px;
+    @include onlylange(810px){
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: column;
+        align-items:center;
+        button{
+            margin-top: 10px;
+        }
+    }
+    @include onlylange(420px){
+        button{
+            width: 100%;
+        }
+    }
 }
