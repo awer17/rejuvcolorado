@@ -536,6 +536,7 @@ section ._wrapper ._left-items li.hover {
   text-transform: uppercase;
   color: #353535;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 section ._wrapper ._left-items li.hover:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -555,6 +556,7 @@ section ._wrapper ._left-items li ul {
   margin-top: 5px;
 }
 section ._wrapper ._left-items li li.hover {
+  cursor: pointer;
   padding-left: 10px;
   font-family: "Montserrat";
   font-style: normal;
@@ -570,6 +572,7 @@ section ._wrapper ._left-items li li.hover:hover {
 }
 
 ._right_items {
+  position: relative;
   width: 77%;
   border-left: solid 1px #656363;
   padding-left: 15px;
@@ -724,9 +727,13 @@ section ._wrapper ._left-items li li.hover:hover {
   }
 }
 ._right_items ._descripcion {
+  display: none;
+  background: #fff;
+  z-index: 2;
   width: 100%;
   padding: 10px;
   padding-left: 0;
+  margin-bottom: 30px;
 }
 ._right_items ._descripcion button {
   width: 150px;
@@ -741,12 +748,12 @@ section ._wrapper ._left-items li li.hover:hover {
   text-transform: uppercase;
   color: #656363;
   margin: 0;
-  margin-left: 200px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 580px) {
   ._right_items ._descripcion h3 {
     margin: 0;
-    text-align: center;
     margin-top: 20px;
   }
 }
@@ -879,4 +886,11 @@ section ._wrapper ._left-items li li.hover:hover {
   ._btn-list button {
     width: 100%;
   }
+}
+
+._right_items ._active {
+  display: inline;
+}
+._right_items ._disabled {
+  display: none;
 }

@@ -1,8 +1,8 @@
 [
     {"nameServes": "Botox",
     "title": "Botox is a neurotoxic protein that weakens the muscle it’s injected into. The procedure only takes a few minutes and the effects last months!",
-    "description":"",
-    "superDescription": "",
+    "description":"Botox is a neurotoxic protein that weakens the muscle it’s injected into. They work to block certain chemical signals from nerves that cause muscles to contract (what causes wrinkles). The procedure only takes a few minutes and the effects last months!",
+    "superDescription": "<p>What are common areas Botox/Dysport treat?</p><ul><li>Forehead Wrinkles</li><li>Crows Feet</li><li>Smile Lines</li><li>Sagging Brows</li><li>Smoker Lines</li><li>Gummy Smile</li></ul><p>What other areas can Botox/Dysport treat?</p><ul><li>TMJ/Masseters (to prevent teeth grinding)</li><li>Neck Bands (to reduce wrinkles)</li><li>Armpits (for excessive sweating)</li><li>Lips (lip flip)</li></ul>",
     "imgTitle" : "botox",
     "img": "imges/servises/botox.jpg",
     "fideo": ""},
