@@ -613,12 +613,7 @@ section ._wrapper ._left-items li li.hover:hover {
 ._right_items ._slider ._wrap ._service_wpar {
   width: 274px;
   height: 322px;
-  cursor: pointer;
   transition: 0.9s;
-}
-._right_items ._slider ._wrap ._service_wpar:hover p._title {
-  margin-bottom: 4px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 ._right_items ._slider ._wrap ._service_wpar img {
   width: 100%;
@@ -639,7 +634,12 @@ section ._wrapper ._left-items li li.hover:hover {
   color: #353535;
   margin-top: 15px;
   margin-bottom: 5px;
-  transition: 0.8s;
+  transition: 0.6s;
+  cursor: pointer;
+}
+._right_items ._slider ._wrap ._service_wpar p._title:hover {
+  margin-bottom: 4px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 ._right_items ._slider ._wrap ._service_wpar ._line {
   display: block;
@@ -750,6 +750,7 @@ section ._wrapper ._left-items li li.hover:hover {
   margin: 0;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 580px) {
   ._right_items ._descripcion h3 {

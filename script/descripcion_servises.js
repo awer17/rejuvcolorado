@@ -4,20 +4,27 @@ const selectServises = document.querySelector('#select_servises');
 const servisesListLeft = document.querySelector("._left-items")
 const descripcion = document.querySelector("._descripcion")
 const slider = document.querySelector("._slider")
+const titleServises = document.querySelector("._slider")
+
+
+
+
+
+
+
+
 
 
 
 
 async function getSliderServis() {
-            
-    const file = './json/services.json';
+    const file = './json/services-1.json';
     let response = await fetch(file, {
         method: 'GET'
     });
     if(response.ok) {
         let result = await response.json();
         servicesDescripcion(result);
-        
         ;
     } else {
         throw new Error(`!!!!!!!!!!! ${err}`)
@@ -43,10 +50,18 @@ function servicesDescripcion(data){
             ${element.superDescription}
         </div>
             `
-            classAdd();
+        }
+        else{
+            console.log(serviseValue)
         }
     });
 }
+titleServises.addEventListener('click' , function(event){
+    serviseValue = event.target.innerHTML;
+    getSliderServis()
+    classAdd();
+    // window.location.href = "servises.html";
+});
 
 function classAdd (){
     descripcion.classList.add("_active");
@@ -67,15 +82,14 @@ servisesList.addEventListener('click' , function(event){
 servisesList.addEventListener('change' , function(event){
     serviseValue = servisesList.value
     getSliderServis()
-    console.log(serviseValue)
-
+    classAdd();
 });
 
 
 servisesListLeft.addEventListener('click',function(event){
     serviseValue = event.target.innerHTML;
     getSliderServis()
-    console.log(serviseValue)
+    classAdd();
 
 })
 

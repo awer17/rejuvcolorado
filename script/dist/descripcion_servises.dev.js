@@ -6,6 +6,7 @@ var selectServises = document.querySelector('#select_servises');
 var servisesListLeft = document.querySelector("._left-items");
 var descripcion = document.querySelector("._descripcion");
 var slider = document.querySelector("._slider");
+var titleServises = document.querySelector("._slider");
 
 function getSliderServis() {
   var file, response, result;
@@ -13,7 +14,7 @@ function getSliderServis() {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          file = './json/services.json';
+          file = './json/services-1.json';
           _context.next = 3;
           return regeneratorRuntime.awrap(fetch(file, {
             method: 'GET'
@@ -53,10 +54,17 @@ function servicesDescripcion(data) {
     if (element.nameServes == serviseValue) {
       descripcion.innerHTML = '';
       descripcion.innerHTML = "<button  onclick=\"btnReturn()\" id=\"return\" class=\"btn_white\">\n            return\n        </button>\n        <h3>".concat(element.nameServes, "</h3>\n        <div class=\"_wrapper\">\n            <p class=\"_main\">").concat(element.description, "</p>\n            <div class=\"_grafic\">\n                <img src=\"").concat(element.img, "\" alt=\"").concat(element.nameServes, "\">\n                <div class=\"_shadow\"></div>\n            </div>    \n        </div>\n        <div class=\"_additional\">\n            ").concat(element.superDescription, "\n        </div>\n            ");
-      classAdd();
+    } else {
+      console.log(serviseValue);
     }
   });
 }
+
+titleServises.addEventListener('click', function (event) {
+  serviseValue = event.target.innerHTML;
+  getSliderServis();
+  classAdd(); // window.location.href = "servises.html";
+});
 
 function classAdd() {
   descripcion.classList.add("_active");
@@ -74,10 +82,10 @@ servisesList.addEventListener('click', function (event) {
 servisesList.addEventListener('change', function (event) {
   serviseValue = servisesList.value;
   getSliderServis();
-  console.log(serviseValue);
+  classAdd();
 });
 servisesListLeft.addEventListener('click', function (event) {
   serviseValue = event.target.innerHTML;
   getSliderServis();
-  console.log(serviseValue);
+  classAdd();
 });
