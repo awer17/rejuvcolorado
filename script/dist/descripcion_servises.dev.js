@@ -49,10 +49,11 @@ function getSliderServis() {
 }
 
 function servicesDescripcion(data) {
-  descripcion.innerHTML = '';
   data.forEach(function (element) {
-    if (element.nameServes === serviseValue) {
+    if (element.nameServes == serviseValue) {
+      descripcion.innerHTML = '';
       descripcion.innerHTML = "<button  onclick=\"btnReturn()\" id=\"return\" class=\"btn_white\">\n            return\n        </button>\n        <h3>".concat(element.nameServes, "</h3>\n        <div class=\"_wrapper\">\n            <p class=\"_main\">").concat(element.description, "</p>\n            <div class=\"_grafic\">\n                <img src=\"").concat(element.img, "\" alt=\"").concat(element.nameServes, "\">\n                <div class=\"_shadow\"></div>\n            </div>    \n        </div>\n        <div class=\"_additional\">\n            ").concat(element.superDescription, "\n        </div>\n            ");
+      classAdd();
     }
   });
 }
@@ -72,11 +73,11 @@ servisesList.addEventListener('click', function (event) {
 });
 servisesList.addEventListener('change', function (event) {
   serviseValue = servisesList.value;
-  classAdd();
   getSliderServis();
+  console.log(serviseValue);
 });
 servisesListLeft.addEventListener('click', function (event) {
   serviseValue = event.target.innerHTML;
-  classAdd();
   getSliderServis();
+  console.log(serviseValue);
 });

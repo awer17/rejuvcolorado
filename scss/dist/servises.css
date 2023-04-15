@@ -768,7 +768,7 @@ section ._wrapper ._left-items li li.hover:hover {
   }
 }
 ._right_items ._descripcion ._wrapper p {
-  width: 534px;
+  width: 334px;
 }
 @media only screen and (max-width: 890px) {
   ._right_items ._descripcion ._wrapper p {
@@ -798,11 +798,12 @@ section ._wrapper ._left-items li li.hover:hover {
 ._right_items ._descripcion ._wrapper ._grafic img {
   position: relative;
   z-index: 1;
-  width: 270px;
+  width: 400px;
   height: 265px;
   object-fit: cover;
   border-radius: 5px;
   border: solid 1px #D9D9D9;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 890px) {
   ._right_items ._descripcion ._wrapper ._grafic img {
@@ -817,7 +818,7 @@ section ._wrapper ._left-items li li.hover:hover {
 }
 ._right_items ._descripcion ._wrapper ._grafic ._shadow {
   background: rgba(228, 64, 228, 0.16);
-  width: 270px;
+  width: 400px;
   height: 265px;
   position: absolute;
   left: 10px;
