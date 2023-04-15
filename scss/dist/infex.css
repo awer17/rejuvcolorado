@@ -769,11 +769,6 @@ div.wrapper footer .wrap .wrap_contacts .wrapper_footer ._ecs {
   margin-top: 15px;
   margin-bottom: 5px;
   transition: 0.6s;
-  cursor: pointer;
-}
-.services ._slider ._wrap ._service_wpar p._title:hover {
-  margin-bottom: 4px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .services ._slider ._wrap ._service_wpar ._line {
   display: block;

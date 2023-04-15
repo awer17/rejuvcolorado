@@ -6,17 +6,6 @@ const descripcion = document.querySelector("._descripcion")
 const slider = document.querySelector("._slider")
 const titleServises = document.querySelector("._slider")
 
-
-
-
-
-
-
-
-
-
-
-
 async function getSliderServis() {
     const file = './json/services-1.json';
     let response = await fetch(file, {
