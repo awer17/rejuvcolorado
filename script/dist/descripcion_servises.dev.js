@@ -51,19 +51,21 @@ function getSliderServis() {
 
 function servicesDescripcion(data) {
   data.forEach(function (element) {
-    if (element.nameServes == serviseValue) {
+    if (element.nameServes === serviseValue && serviseValue !== '') {
       descripcion.innerHTML = '';
       descripcion.innerHTML = "<button  onclick=\"btnReturn()\" id=\"return\" class=\"btn_white\">\n            return\n        </button>\n        <h3>".concat(element.nameServes, "</h3>\n        <div class=\"_wrapper\">\n            <p class=\"_main\">").concat(element.description, "</p>\n            <div class=\"_grafic\">\n                <img src=\"").concat(element.img, "\" alt=\"").concat(element.nameServes, "\">\n                <div class=\"_shadow\"></div>\n            </div>    \n        </div>\n        <div class=\"_additional\">\n            ").concat(element.superDescription, "\n        </div>\n            ");
-    } else {
-      console.log(serviseValue);
     }
   });
 }
 
 titleServises.addEventListener('click', function (event) {
   serviseValue = event.target.innerHTML;
-  getSliderServis();
-  classAdd(); // window.location.href = "servises.html";
+
+  if (serviseValue !== '' && serviseValue.length < 30) {
+    console.log(serviseValue.length);
+    getSliderServis();
+    classAdd(); // window.location.href = "servises.html";    
+  }
 });
 
 function classAdd() {
@@ -76,10 +78,8 @@ function btnReturn() {
   slider.classList.remove("_disabled");
 }
 
-servisesList.addEventListener('click', function (event) {
-  selectServises.setAttribute("disabled", "disabled");
-});
 servisesList.addEventListener('change', function (event) {
+  selectServises.setAttribute("disabled", "disabled");
   serviseValue = servisesList.value;
   getSliderServis();
   classAdd();

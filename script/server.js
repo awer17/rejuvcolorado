@@ -21,7 +21,7 @@ function servisItemlist(data){
     data.forEach(element => {
         wrapeerSlider.innerHTML += `<div class="swiper-slide _service_wpar _slide">
         <img src="${element.img}" alt="${element.title}">
-        <p  class="_title">${element.nameServes}</p>
+        <p value="${element.nameServes}"  class="_title">${element.nameServes}</p>
         <span class="_line"></span>
         <p class="_subtitle">${element.title}</p>
 </div>
