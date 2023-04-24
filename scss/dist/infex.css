@@ -214,17 +214,12 @@ div.wrapper .center {
 }
 @media only screen and (max-width: 1300px) {
   div.wrapper .center {
-    max-width: 95%;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  div.wrapper .center {
-    max-width: 95%;
+    max-width: 90%;
   }
 }
 @media only screen and (max-width: 430px) {
   div.wrapper .center {
-    max-width: 87%;
+    max-width: 92%;
   }
 }
 div.wrapper header {

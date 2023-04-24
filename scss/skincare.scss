@@ -1,0 +1,108 @@
+@import "style.scss";
+
+.wrapper{
+    h1{
+        @include textstyle-h2($grey_black);
+        margin-bottom: 16px;
+        padding-top: 108px;
+    }
+    ._wrap{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 53px;
+        padding-bottom:70px;
+        justify-content: space-between;
+        @include onlylange(1160px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .img-item{
+            position: relative;
+            ._img-skincare{
+                width: 332px;
+                height: 310px;
+                background: #F1F1F1;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                @include onlylange(390px){
+                    max-width: 280px;
+                    .img-item{
+                        width: 90%;
+                    }
+                }
+                .img-item{
+                    display: block;
+                    margin: 0 auto;
+                    padding-top: 14px;
+                }
+            }
+            .alastin{
+                height: 310px;
+                background: linear-gradient(180deg, rgba(203, 213, 242, 0.94) 0%, rgba(240, 233, 248, 0.85) 100%);
+            }
+            ._bg-shodow{
+                display: inline-block;
+                width: 332px;
+                height: 310px;
+                background: #FDF4FD;
+                border-radius: 5px;
+                position: absolute;
+                left: 21px;
+                top: 21px;
+                z-index:-1;
+                @include onlylange(390px){
+                    display: none;
+                }
+            }
+        
+        }
+        ._descripcion{
+            max-width: 661px;
+            img{
+                display: block;
+                margin-left: auto;
+                padding-bottom: 10px;
+                @include onlylange(1160px){
+                    margin-top: 50px;
+                }    
+            }
+            .btn_pink{
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                @include onlylange(420px){
+                    width: 95%;
+                }
+            }
+            .subtitle{
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: $black;
+                margin: 0;
+                margin-top: 29px;
+                text-align: center;
+            }
+            
+        }
+    }
+    .revers{
+        flex-direction: row-reverse;
+        @include onlylange(1160px){
+            flex-direction: column;
+            align-items: center;
+        }
+        ._descripcion{
+            img{
+                margin-left: 0;
+                margin-right: auto;
+                @include onlylange(1160px){
+                    margin-right: 0;
+                    margin-left: auto;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}

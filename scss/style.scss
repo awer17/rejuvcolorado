@@ -235,13 +235,11 @@ div.wrapper{
         max-width: 1200px;
         margin: 0 auto;
         @include onlylange(1300px){
-            max-width: 95%;
+            max-width: 90%;
         }
-        @include onlylange(1050px){
-            max-width: 95%;
-        }
+
         @include onlylange(430px){
-            max-width: 87%;
+            max-width: 92%;
         }
     }
     header{

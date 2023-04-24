@@ -11,3 +11,7 @@ function linkDescont() {
 function serviceslink() {
   window.location.href = "servises.html";
 }
+
+function lingShop() {
+  window.location.href = "https://store.skinbetter.com/shop";
+}

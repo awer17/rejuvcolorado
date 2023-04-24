@@ -1,7 +1,7 @@
 @import "style.scss";
 
 section{
-    padding-top: 51px;
+    padding-top: 50px;
     ._list{
         align-items: center;
         display: flex;
@@ -24,7 +24,7 @@ section{
             padding: 7px;
             border-radius: 7px;
             padding-right: 8px;
-            @include onlylange(1190px){
+            @include onlylange(830px){
                 display: inline;
             }
             @include onlylange(420px){
@@ -213,7 +213,7 @@ section{
             position: absolute;
             bottom: 0;
             cursor: pointer;
-            @include onlylange(810px){
+            @include onlylange(830px){
                 display: none;
             }
             &:hover{

@@ -214,17 +214,12 @@ div.wrapper .center {
 }
 @media only screen and (max-width: 1300px) {
   div.wrapper .center {
-    max-width: 95%;
-  }
-}
-@media only screen and (max-width: 1050px) {
-  div.wrapper .center {
-    max-width: 95%;
+    max-width: 90%;
   }
 }
 @media only screen and (max-width: 430px) {
   div.wrapper .center {
-    max-width: 87%;
+    max-width: 92%;
   }
 }
 div.wrapper header {
@@ -448,7 +443,7 @@ div.wrapper footer .wrap .wrap_contacts .wrapper_footer ._ecs {
 }
 
 section {
-  padding-top: 51px;
+  padding-top: 50px;
 }
 section ._list {
   align-items: center;
@@ -476,7 +471,7 @@ section ._list ._servises {
   border-radius: 7px;
   padding-right: 8px;
 }
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 830px) {
   section ._list ._servises {
     display: inline;
   }
@@ -678,7 +673,7 @@ section ._wrapper ._left-items li li.hover:hover {
   bottom: 0;
   cursor: pointer;
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 830px) {
   ._right_items ._slider ._btn-nav {
     display: none;
   }
