@@ -15,3 +15,7 @@ function serviceslink() {
 function lingShop() {
   window.location.href = "https://store.skinbetter.com/shop";
 }
+
+function lingShopAlastin() {
+  window.location.href = "https://Alastin.com/ReJuvAesthetics";
+}
