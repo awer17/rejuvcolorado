@@ -1,3 +1,5 @@
+
+
 function hrefto() {
         window.location.href = "https://rejuvaesthetics.myaestheticrecord.com/book/appointments"
 }
@@ -15,3 +17,4 @@ function lingShop(){
 function lingShopAlastin(){
         window.location.href = "https://Alastin.com/ReJuvAesthetics";
 }
+
