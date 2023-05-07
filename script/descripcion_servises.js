@@ -7,7 +7,7 @@ const slider = document.querySelector("._slider")
 const titleServises = document.querySelector("._slider")
 
 async function getSliderServis() {
-    const file = './json/services-1.json';
+    const file = './json/services.json';
     let response = await fetch(file, {
         method: 'GET'
     });
@@ -22,7 +22,7 @@ async function getSliderServis() {
 
 function servicesDescripcion(data){
     data.forEach(element => {
-        if(element.nameServes === serviseValue && serviseValue !== ''){
+        if(element.nameServes === serviseValue && serviseValue !== ''|| element.code === serviseValue){
             descripcion.innerHTML = '';
             descripcion.innerHTML = `<button  onclick="btnReturn()" id="return" class="btn_white">
             return
@@ -43,14 +43,24 @@ function servicesDescripcion(data){
     });
 }
 
+let params = (new URL(document.location)).searchParams;
+
+
+titleStartServises(params)
+
+function titleStartServises(a){
+    serviseValue = a.get('data')
+    if (serviseValue !== null) {
+        getSliderServis()
+        classAdd();
+    }
+}
+
 titleServises.addEventListener('click' , function(event){
     serviseValue = event.target.innerHTML;
     if(serviseValue !== '' && serviseValue.length < 30 ){
-        console.log(serviseValue.length)
         getSliderServis()
-        classAdd();
-        // window.location.href = "servises.html";    
-    }
+        classAdd();    }
 });
 
 function classAdd (){
@@ -61,19 +71,21 @@ function classAdd (){
 function btnReturn () {
     descripcion.classList.remove("_active");
     slider.classList.remove("_disabled");
+    // window.location.href = "servises.html";    
 
 }
 
 servisesList.addEventListener('change' , function(event){
     selectServises.setAttribute("disabled","disabled");
-    serviseValue = servisesList.value
+    serviseValue = event.target.value
+    console.log(event.target.value)
     getSliderServis()
     classAdd();
 });
 
 
 servisesListLeft.addEventListener('click',function(event){
-    serviseValue = event.target.innerHTML;
+    serviseValue = event.target.dataset.code;
     getSliderServis()
     classAdd();
 })

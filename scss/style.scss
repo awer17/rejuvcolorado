@@ -253,6 +253,12 @@ div.wrapper{
             @include onlylange(600px){
                 justify-content: center;
             }
+            ._logo-nav{
+                img{
+                    width: 115px;
+                    height: 41px;
+                }
+            }
             .wrap_nav{
                 a{
                     @include onlylange(1050px){
@@ -360,7 +366,7 @@ div.wrapper{
             @include onlylange(950px){
                 flex-direction: column;
             }
-            a.img_map{
+            ._map{
                 width: 50%;
                 @include onlylange(950px){
                 width: 100%;

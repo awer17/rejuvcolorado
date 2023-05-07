@@ -237,6 +237,10 @@ div.wrapper header .header_wrapper {
     justify-content: center;
   }
 }
+div.wrapper header .header_wrapper ._logo-nav img {
+  width: 115px;
+  height: 41px;
+}
 div.wrapper header .header_wrapper .wrap_nav {
   display: flex;
   flex-wrap: wrap;
@@ -354,22 +358,22 @@ div.wrapper footer .wrap {
     flex-direction: column;
   }
 }
-div.wrapper footer .wrap a.img_map {
+div.wrapper footer .wrap ._map {
   width: 50%;
 }
 @media only screen and (max-width: 950px) {
-  div.wrapper footer .wrap a.img_map {
+  div.wrapper footer .wrap ._map {
     width: 100%;
     height: 281px;
   }
 }
-div.wrapper footer .wrap a.img_map .bg_map {
+div.wrapper footer .wrap ._map .bg_map {
   background: url(../imges/map.jpg);
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 600px) {
-  div.wrapper footer .wrap a.img_map .bg_map {
+  div.wrapper footer .wrap ._map .bg_map {
     background-position: 50% 50%;
   }
 }

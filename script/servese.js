@@ -1,10 +1,10 @@
 const clickSlide = document.querySelector('._slider ')
-console.log(clickSlide)
+
 var aTetle = '';
 clickSlide.addEventListener('click', function(event){
         aValue = event.target.innerHTML;
-        if(aValue.length < 30){
+        if(aValue.length < 30 && aValue.length > 0){
                 aTetle = aValue;
-                console.log(aTetle)
+                window.location.href = `servises.html?data=${event.target.dataset.code}`
         }
 })

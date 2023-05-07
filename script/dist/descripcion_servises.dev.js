@@ -14,7 +14,7 @@ function getSliderServis() {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          file = './json/services-1.json';
+          file = './json/services.json';
           _context.next = 3;
           return regeneratorRuntime.awrap(fetch(file, {
             method: 'GET'
@@ -51,20 +51,31 @@ function getSliderServis() {
 
 function servicesDescripcion(data) {
   data.forEach(function (element) {
-    if (element.nameServes === serviseValue && serviseValue !== '') {
+    if (element.nameServes === serviseValue && serviseValue !== '' || element.code === serviseValue) {
       descripcion.innerHTML = '';
       descripcion.innerHTML = "<button  onclick=\"btnReturn()\" id=\"return\" class=\"btn_white\">\n            return\n        </button>\n        <h3>".concat(element.nameServes, "</h3>\n        <div class=\"_wrapper\">\n            <p class=\"_main\">").concat(element.description, "</p>\n            <div class=\"_grafic\">\n                <img src=\"").concat(element.img, "\" alt=\"").concat(element.nameServes, "\">\n                <div class=\"_shadow\"></div>\n            </div>    \n        </div>\n        <div class=\"_additional\">\n            ").concat(element.superDescription, "\n        </div>\n            ");
     }
   });
 }
 
+var params = new URL(document.location).searchParams;
+titleStartServises(params);
+
+function titleStartServises(a) {
+  serviseValue = a.get('data');
+
+  if (serviseValue !== null) {
+    getSliderServis();
+    classAdd();
+  }
+}
+
 titleServises.addEventListener('click', function (event) {
   serviseValue = event.target.innerHTML;
 
   if (serviseValue !== '' && serviseValue.length < 30) {
-    console.log(serviseValue.length);
     getSliderServis();
-    classAdd(); // window.location.href = "servises.html";    
+    classAdd();
   }
 });
 
@@ -75,17 +86,18 @@ function classAdd() {
 
 function btnReturn() {
   descripcion.classList.remove("_active");
-  slider.classList.remove("_disabled");
+  slider.classList.remove("_disabled"); // window.location.href = "servises.html";    
 }
 
 servisesList.addEventListener('change', function (event) {
   selectServises.setAttribute("disabled", "disabled");
-  serviseValue = servisesList.value;
+  serviseValue = event.target.value;
+  console.log(event.target.value);
   getSliderServis();
   classAdd();
 });
 servisesListLeft.addEventListener('click', function (event) {
-  serviseValue = event.target.innerHTML;
+  serviseValue = event.target.dataset.code;
   getSliderServis();
   classAdd();
 });

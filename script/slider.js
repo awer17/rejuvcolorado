@@ -22,7 +22,7 @@ new Swiper('.swiper',{
             },
 
         },
-        600: {
+        601: {
             slidesPerView: 2,
             spaceBetween: 24,
             grid: {
