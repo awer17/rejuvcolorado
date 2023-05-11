@@ -42,7 +42,7 @@ function getSliderServis() {
 }
 
 function servisItemlist(data) {
-  var wrapeerSlider = document.querySelector('.swiper-wrapper');
+  var wrapeerSlider = document.querySelector('.slider-content');
   wrapeerSlider.innerHTML = '';
   data.forEach(function (element) {
     wrapeerSlider.innerHTML += "<div class=\"swiper-slide _service_wpar _slide\">\n        <img src=\"".concat(element.img, "\" alt=\"").concat(element.title, "\">\n        <p data-code=").concat(element.code, " value=\"").concat(element.nameServes, "\"  class=\"_title\">").concat(element.nameServes, "</p>\n        <span class=\"_line\"></span>\n        <p class=\"_subtitle\">").concat(element.title, "</p>\n</div>\n");

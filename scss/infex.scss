@@ -126,6 +126,217 @@
         }
     }
 }
+
+//stok_slide
+.slider_stock{
+    padding-top: 40px;
+    .swiper-slide{
+        background: url(../imges/slide_index/flowers.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        .bg{
+            max-width: 1060px;
+            background: rgba(118, 55, 134, 0.7);
+            border-radius: 25px;
+            margin: 60px auto;
+            @include onlylange(1260px){
+                width: 90%;
+                margin: 30px auto;
+            }
+            @include onlylange(1260px){
+                width: 90%;
+                margin: 15px auto;
+            }
+            .titel{
+                width: 554px;
+                margin: 0px auto;
+                padding: 100px 0;
+                @include onlylange(853px){
+                    padding: 80px 0;
+                    width: 90%;
+                }
+                p{
+                    font-family: 'Zeyada';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 105px;
+                    line-height: 121.12%;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    margin: 0;
+                    @include onlylange(1090px){
+                        font-size: 90px;
+                        line-height: 100%;
+                    }
+                    @include onlylange(526px){
+                        font-size: 70px;
+                    }
+                    
+                }
+                p.center-text{
+                    text-align: center;
+                }
+                p.end-text{
+                    text-align: end;
+                }
+            }
+        }
+    }
+    .men{
+        background: url(../imges/slide_index/men.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        .bg{
+            .titel{
+                width: 850px;
+                margin: 0px auto;
+                padding: 197px 0;
+                @include onlylange(1090px){
+                    padding: 175px 0;
+                    width: 90%;
+                }
+                @include onlylange(656px){
+                    padding: 155px 0;
+                }
+                @include onlylange(526px){
+                    padding: 133px 0;
+                }
+                @include onlylange(419px){
+                    padding: 115px 0;
+                }
+                p{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 58px;
+                    line-height: 93px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include onlylange(1090px){
+                        font-size: 45px;
+                        line-height: 60px;
+                    }
+                    @include onlylange(853px){
+                        font-size: 35px;
+                        line-height: 40px;
+                    }
+                    @include onlylange(526px){
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .woman{
+        background: url(../imges/slide_index/woman.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        .bg{
+            .titel{
+                margin: 0px auto;
+                padding: 150px 0;
+                @include onlylange(1090px){
+                    padding: 145px 0;
+                    width: 70%;
+                }
+                @include onlylange(993px){
+                    width: 90%;
+                }
+                @include onlylange(853px){
+                    padding: 175px 0;
+                }
+                @include onlylange(771px){
+                    padding: 155px 0;
+                }
+                @include onlylange(600px){
+                    width: 95%;
+                }
+                @include onlylange(569px){
+                    padding: 140px 0;
+                }
+                @include onlylange(526px){
+                    padding: 133px 0;
+                }
+                @include onlylange(488px){
+                    padding: 115px 0;
+                }
+                @include onlylange(450px){
+                    padding: 98px 0;
+                }
+            }    
+        }
+    }
+    .final{
+        .bg{
+            .titel{
+                width: 850px;
+                margin: 0px auto;
+                padding: 84px 0;
+                @include onlylange(1090px){
+                    padding: 95px 0;
+                    width: 90%;
+                }
+                @include onlylange(853px){
+                    width: 85%;
+                    padding: 115px 0;
+                }
+                @include onlylange(704px){
+                    width: 95%;
+                }
+                @include onlylange(628px){
+                    width: 85%;
+                    padding: 75px 0;
+                }
+                @include onlylange(526px){
+                    padding: 60px 0;
+                }
+                @include onlylange(362px){
+                    padding: 75px 0;
+                }
+                @include onlylange(337px){
+                    padding: 45px 0;
+                }
+                p.fn{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 58px;
+                    line-height: 93px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    @include onlylange(1090px){
+                        font-size: 45px;
+                        line-height: 60px;
+                    }
+                    @include onlylange(853px){
+                        font-size: 35px;
+                        line-height: 40px;
+                    }
+                    @include onlylange(526px){
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                    @include onlylange(362px){
+                        font-size: 28px;
+                        line-height: 30px;
+                    }
+                }
+                p.next{
+                    margin-top: 40px;
+                }
+            }    
+        }
+    }
+    .swiper-pagination span{
+    background: $white;
+    }
+}
+
+body > div > main > div.slider_stock.center > div > div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic > span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main{
+    background: $white;
+}
 //section title_about
 .title_about{
     padding-top: 90px;

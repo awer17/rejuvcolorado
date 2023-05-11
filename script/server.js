@@ -16,7 +16,7 @@ async function getSliderServis() {
 }
 
 function servisItemlist(data){
-    let wrapeerSlider = document.querySelector('.swiper-wrapper')
+    let wrapeerSlider = document.querySelector('.slider-content')
     wrapeerSlider.innerHTML = ''
     data.forEach(element => {
         wrapeerSlider.innerHTML += `<div class="swiper-slide _service_wpar _slide">

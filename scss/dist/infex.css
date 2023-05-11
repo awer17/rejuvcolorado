@@ -604,6 +604,271 @@ div.wrapper footer .wrap .wrap_contacts .wrapper_footer ._ecs {
   }
 }
 
+.slider_stock {
+  padding-top: 40px;
+}
+.slider_stock .swiper-slide {
+  background: url(../imges/slide_index/flowers.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slider_stock .swiper-slide .bg {
+  max-width: 1060px;
+  background: rgba(118, 55, 134, 0.7);
+  border-radius: 25px;
+  margin: 60px auto;
+}
+@media only screen and (max-width: 1260px) {
+  .slider_stock .swiper-slide .bg {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 1260px) {
+  .slider_stock .swiper-slide .bg {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+.slider_stock .swiper-slide .bg .titel {
+  width: 554px;
+  margin: 0px auto;
+  padding: 100px 0;
+}
+@media only screen and (max-width: 853px) {
+  .slider_stock .swiper-slide .bg .titel {
+    padding: 80px 0;
+    width: 90%;
+  }
+}
+.slider_stock .swiper-slide .bg .titel p {
+  font-family: "Zeyada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 105px;
+  line-height: 121.12%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 0;
+}
+@media only screen and (max-width: 1090px) {
+  .slider_stock .swiper-slide .bg .titel p {
+    font-size: 90px;
+    line-height: 100%;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .slider_stock .swiper-slide .bg .titel p {
+    font-size: 70px;
+  }
+}
+.slider_stock .swiper-slide .bg .titel p.center-text {
+  text-align: center;
+}
+.slider_stock .swiper-slide .bg .titel p.end-text {
+  text-align: end;
+}
+.slider_stock .men {
+  background: url(../imges/slide_index/men.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slider_stock .men .bg .titel {
+  width: 850px;
+  margin: 0px auto;
+  padding: 197px 0;
+}
+@media only screen and (max-width: 1090px) {
+  .slider_stock .men .bg .titel {
+    padding: 175px 0;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 656px) {
+  .slider_stock .men .bg .titel {
+    padding: 155px 0;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .slider_stock .men .bg .titel {
+    padding: 133px 0;
+  }
+}
+@media only screen and (max-width: 419px) {
+  .slider_stock .men .bg .titel {
+    padding: 115px 0;
+  }
+}
+.slider_stock .men .bg .titel p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 93px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1090px) {
+  .slider_stock .men .bg .titel p {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 853px) {
+  .slider_stock .men .bg .titel p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .slider_stock .men .bg .titel p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+.slider_stock .woman {
+  background: url(../imges/slide_index/woman.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slider_stock .woman .bg .titel {
+  margin: 0px auto;
+  padding: 150px 0;
+}
+@media only screen and (max-width: 1090px) {
+  .slider_stock .woman .bg .titel {
+    padding: 145px 0;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .slider_stock .woman .bg .titel {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 853px) {
+  .slider_stock .woman .bg .titel {
+    padding: 175px 0;
+  }
+}
+@media only screen and (max-width: 771px) {
+  .slider_stock .woman .bg .titel {
+    padding: 155px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slider_stock .woman .bg .titel {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 569px) {
+  .slider_stock .woman .bg .titel {
+    padding: 140px 0;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .slider_stock .woman .bg .titel {
+    padding: 133px 0;
+  }
+}
+@media only screen and (max-width: 488px) {
+  .slider_stock .woman .bg .titel {
+    padding: 115px 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .slider_stock .woman .bg .titel {
+    padding: 98px 0;
+  }
+}
+.slider_stock .final .bg .titel {
+  width: 850px;
+  margin: 0px auto;
+  padding: 84px 0;
+}
+@media only screen and (max-width: 1090px) {
+  .slider_stock .final .bg .titel {
+    padding: 95px 0;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 853px) {
+  .slider_stock .final .bg .titel {
+    width: 85%;
+    padding: 115px 0;
+  }
+}
+@media only screen and (max-width: 704px) {
+  .slider_stock .final .bg .titel {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 628px) {
+  .slider_stock .final .bg .titel {
+    width: 85%;
+    padding: 75px 0;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .slider_stock .final .bg .titel {
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 362px) {
+  .slider_stock .final .bg .titel {
+    padding: 75px 0;
+  }
+}
+@media only screen and (max-width: 337px) {
+  .slider_stock .final .bg .titel {
+    padding: 45px 0;
+  }
+}
+.slider_stock .final .bg .titel p.fn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 93px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 1090px) {
+  .slider_stock .final .bg .titel p.fn {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 853px) {
+  .slider_stock .final .bg .titel p.fn {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .slider_stock .final .bg .titel p.fn {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 362px) {
+  .slider_stock .final .bg .titel p.fn {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+.slider_stock .final .bg .titel p.next {
+  margin-top: 40px;
+}
+.slider_stock .swiper-pagination span {
+  background: #fff;
+}
+
+body > div > main > div.slider_stock.center > div > div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic > span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-bullet-active-main {
+  background: #fff;
+}
+
 .title_about {
   padding-top: 90px;
   display: flex;

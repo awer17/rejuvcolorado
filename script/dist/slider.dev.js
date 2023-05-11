@@ -1,6 +1,6 @@
 "use strict";
 
-new Swiper('.swiper', {
+new Swiper('.mySwiper', {
   navigation: {
     nextEl: '._next',
     prevEl: '._prev'
@@ -38,5 +38,16 @@ new Swiper('.swiper', {
       },
       seed: 800
     }
+  }
+});
+var swiper2 = new Swiper(".stok_swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true
+  },
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true
   }
 });
